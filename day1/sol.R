@@ -1,6 +1,6 @@
 library(tidyverse)
 
-input_raw <- data.frame(x = readLines("input.txt"))
+input_raw <- data.frame(x = readLines("day1/input.txt"))
 
 input <- input_raw |> 
   separate(x, into = c("left", "right"), sep = "\\s+") |> 
